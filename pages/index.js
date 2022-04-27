@@ -1,5 +1,8 @@
 import Head from 'next/head'
 import Image from 'next/image'
+
+import Features from '../components/Features';
+
 import styles from '../styles/home.module.scss'
 
 export default function Home() {
@@ -11,7 +14,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <section className={`${styles.hero} relative flex justify-center items-end`}>
+      <section className={`${styles.hero} relative flex justify-center items-end h-screen`}>
         <div className='hidden absolute top-8 sm:block'>
           <Image
             src="/images/logo/logo.png"
@@ -58,6 +61,13 @@ export default function Home() {
               height={32}
             />
           </a>
+        </div>
+      </section>
+
+      <section className={`${styles.features} flex flex-col items-center h-screen`}>
+        <h1 className='text-4xl font-bold text-orange-700 mt-20 mb-12'>— Game Features —</h1>
+        <div className='w-2/3'>
+          <Features />
         </div>
       </section>
     </>

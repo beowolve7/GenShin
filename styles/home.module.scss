@@ -1,7 +1,6 @@
 .hero {
   background: url('../public/images/background/home_hero.jpeg') no-repeat center center;
   background-size: cover;
-  height: 100vh;
 
   a.download {
     background-color: rgba(0, 0, 0, 0.6);
@@ -11,4 +10,9 @@
       background-color: black;
     }
   }
+}
+
+.features {
+  background: url('../public/images/background/features.jpeg') no-repeat center center;
+  background-size: cover;
 }
