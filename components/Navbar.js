@@ -34,7 +34,7 @@ const Navbar = () => {
         </Link>
         <ul className="flex flex-row gap-12 text-lg lg:gap-6 md:gap-4">
           <li className="font-medium underline-offset-2 ease-in-out opacity-80 duration-100 hover:underline hover:scale-110 hover:font-medium hover:opacity-100 md:text-sm">
-            <Link href="">
+            <Link href="/#news">
               <a>News</a>
             </Link>
           </li>
@@ -74,7 +74,7 @@ const Navbar = () => {
                 height={28}
               />
             </div>
-            <Link href="">
+            <Link href="/#news">
               <a>News</a>
             </Link>
           </li>

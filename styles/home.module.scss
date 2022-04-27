@@ -12,7 +12,17 @@
   }
 }
 
+.news {
+  background: url('../public/images/background/news.jpeg') no-repeat center center;
+  background-size: cover;
+
+  .newstabs {
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+}
+
 .features {
   background: url('../public/images/background/features.jpeg') no-repeat center center;
   background-size: cover;
+  background-color: rgba(0, 0, 0, 0.1);
 }

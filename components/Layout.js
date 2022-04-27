@@ -5,8 +5,6 @@ const Layout = ({ children }) => {
     <>
       <Navbar />
       { children }
-      <div className='h-96 bg-slate-500'></div>
-      <div className='h-96 bg-slate-500'></div>
     </>
   )
 }

@@ -1,6 +1,8 @@
 import Head from 'next/head'
 import Image from 'next/image'
 
+import News from '../components/News';
+import Tabs from '../components/Tabs';
 import Features from '../components/Features';
 
 import styles from '../styles/home.module.scss'
@@ -64,9 +66,21 @@ export default function Home() {
         </div>
       </section>
 
-      <section className={`${styles.features} flex flex-col items-center h-screen`}>
-        <h1 className='text-4xl font-bold text-orange-700 mt-20 mb-12'>— Game Features —</h1>
-        <div className='w-2/3'>
+      <section id="news" className={`${styles.news} flex flex-col items-center justify-center h-screen lg:h-auto`}>
+        <h1 className='text-4xl font-bold text-orange-100 mb-16 lg:mt-20 sm:mt-16 sm:mb-12'>— News —</h1>
+        <div className='flex w-4/5 mb-20 xl:w-11/12 lg:flex-col lg:items-center lg:w-2/3 md:w-4/5 sm:mb-16'>
+          <div className='w-1/2 lg:w-full'>
+            <News />
+          </div>
+          <div className={`${styles.newstabs} w-1/2 lg:w-full lg:pb-2`}>
+            <Tabs />
+          </div>
+        </div>
+      </section>
+
+      <section className={`${styles.features} flex flex-col items-center h-screen bg-blend-overlay xl:h-auto`}>
+        <h1 className='text-4xl font-bold text-orange-700 mt-20 mb-12 lg:mt-16 sm:mt-12 sm:mb-8 sm:text-2xl'>— Game Features —</h1>
+        <div className='w-2/3 xl:mb-16 sm:w-4/5'>
           <Features />
         </div>
       </section>
