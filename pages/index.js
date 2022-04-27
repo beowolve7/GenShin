@@ -1,5 +1,5 @@
 import Head from 'next/head'
-// import Image from 'next/image'
+import Image from 'next/image'
 import styles from '../styles/home.module.scss'
 
 export default function Home() {
@@ -11,8 +11,54 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <section className={styles.hero}>
-        
+      <section className={`${styles.hero} relative flex justify-center items-end`}>
+        <div className='hidden absolute top-8 sm:block'>
+          <Image
+            src="/images/logo/logo.png"
+            alt="Logo"
+            width={194}
+            height={70}
+          />
+        </div>
+        <div className='absolute top-52 left-40 w-96 text-white lg:top-60 lg:left-28 sm:top-80 sm:left-8 sm:w-64'>
+          <h1 className='text-4xl font-semibold text-orange-200 md:text-2xl'>An Open-World</h1>
+          <h1 className='text-4xl font-semibold md:text-2xl'>Action RPG Game</h1>
+          <p className='text-md leading-tight opacity-70 mt-3 md:text-sm'>In the world of Teyvat — where all kinds of elemental powers constantly surge — epic adventures await, fearless travelers!</p>
+        </div>
+        <div className='grid grid-cols-4 gap-8 mx-10 mb-24 md:grid-cols-2 md:mb-12 sm:hidden'>
+          <a href="" className={`${styles.download} flex justify-center items-center rounded-lg p-4`}>
+            <Image
+              src="/images/logo/Playstation.png"
+              alt='PlayStation'
+              width={160}
+              height={18}
+            />
+          </a>
+          <a href="" className={`${styles.download} flex justify-center items-center rounded-lg p-4`}>
+            <Image
+              src="/images/logo/AppStore.png"
+              alt='PlayStation'
+              width={160}
+              height={38}
+            />
+          </a>
+          <a href="" className={`${styles.download} flex justify-center items-center rounded-lg p-4`}>
+            <Image
+              src="/images/logo/GooglePlay.png"
+              alt='PlayStation'
+              width={160}
+              height={38}
+            />
+          </a>
+          <a href="" className={`${styles.download} flex justify-center items-center rounded-lg p-4`}>
+            <Image
+              src="/images/logo/Windows.png"
+              alt='PlayStation'
+              width={160}
+              height={32}
+            />
+          </a>
+        </div>
       </section>
     </>
   )

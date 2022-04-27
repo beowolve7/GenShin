@@ -2,4 +2,13 @@
   background: url('../public/images/background/home_hero.jpeg') no-repeat center center;
   background-size: cover;
   height: 100vh;
+
+  a.download {
+    background-color: rgba(0, 0, 0, 0.6);
+    border: 0.5px solid white;
+
+    &:hover {
+      background-color: black;
+    }
+  }
 }
