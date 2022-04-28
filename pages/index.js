@@ -80,7 +80,7 @@ export default function Home() {
 
       <section className={`${styles.features} flex flex-col items-center h-screen bg-blend-overlay xl:h-auto`}>
         <h1 className='text-4xl font-bold text-orange-700 mt-20 mb-12 lg:mt-16 sm:mt-12 sm:mb-8 sm:text-2xl'>— Game Features —</h1>
-        <div className='w-2/3 xl:mb-16 sm:w-4/5'>
+        <div className='w-2/3 xl:mb-16 sm:w-4/5 sm:mb-24'>
           <Features />
         </div>
       </section>

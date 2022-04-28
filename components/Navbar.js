@@ -44,7 +44,7 @@ const Navbar = () => {
             </Link>
           </li>
           <li className="font-medium underline-offset-2 ease-in-out opacity-80 duration-100 hover:underline hover:scale-110 hover:font-medium hover:opacity-100 md:text-sm">
-            <Link href="">
+            <Link href="/world">
               <a>World</a>
             </Link>
           </li>
@@ -63,7 +63,7 @@ const Navbar = () => {
         </button>
       </nav>
 
-      <div className={`${styles.mobilemenu} ${openMenu ? "h-3/5" : "h-0"} hidden flex-col items-center fixed z-40 bottom-0 w-screen rounded-t-3xl duration-300 sm:flex`}>
+      <div className={`${styles.mobilemenu} ${openMenu ? "h-96" : "h-0"} hidden flex-col items-center fixed z-40 bottom-0 w-screen rounded-t-3xl duration-300 sm:flex`}>
         <ul className="flex flex-col gap-2 text-white text-lg font-medium pt-6">
           <li className="flex">
             <div className="mr-2">
@@ -75,7 +75,7 @@ const Navbar = () => {
               />
             </div>
             <Link href="/#news">
-              <a>News</a>
+              <a onClick={() => setOpenMenu(false)}>News</a>
             </Link>
           </li>
           <li className="flex">
@@ -88,7 +88,7 @@ const Navbar = () => {
               />
             </div>
             <Link href="">
-              <a>Characters</a>
+              <a onClick={() => setOpenMenu(false)}>Characters</a>
             </Link>
           </li>
           <li className="flex">
@@ -100,8 +100,8 @@ const Navbar = () => {
                 height={28}
               />
             </div>
-            <Link href="">
-              <a>World</a>
+            <Link href="/world">
+              <a onClick={() => setOpenMenu(false)}>World</a>
             </Link>
           </li>
           <li className="flex">
@@ -113,7 +113,14 @@ const Navbar = () => {
                 height={28}
               />
             </div>
-            <a href="https://www.hoyolab.com/home">HoYoLAB</a>
+            <a
+              href="https://www.hoyolab.com/home"
+              onClick={() => setOpenMenu(false)}
+              target="_blank"
+              rel="noreferrer"
+            >
+              HoYoLAB
+            </a>
           </li>
         </ul>
         <button className="flex items-center font-medium border-2 rounded-3xl mt-4 px-3 py-1.5 duration-100 focus:bg-lime-500 focus:scale-95">
