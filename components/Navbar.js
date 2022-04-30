@@ -39,13 +39,13 @@ const Navbar = () => {
             </Link>
           </li>
           <li className="font-medium underline-offset-2 ease-in-out opacity-80 duration-100 hover:underline hover:scale-110 hover:font-medium hover:opacity-100 md:text-sm">
-            <Link href="">
-              <a>Characters</a>
+            <Link href="/world">
+              <a>World</a>
             </Link>
           </li>
           <li className="font-medium underline-offset-2 ease-in-out opacity-80 duration-100 hover:underline hover:scale-110 hover:font-medium hover:opacity-100 md:text-sm">
-            <Link href="/world">
-              <a>World</a>
+            <Link href="/characters">
+              <a>Characters</a>
             </Link>
           </li>
           <li className="font-medium underline-offset-2 ease-in-out opacity-80 duration-100 hover:underline hover:scale-110 hover:font-medium hover:opacity-100 md:text-sm">
@@ -81,19 +81,6 @@ const Navbar = () => {
           <li className="flex">
             <div className="mr-2">
               <Image
-                src="/images/icon/characters.png"
-                alt="Characters"
-                width={28}
-                height={28}
-              />
-            </div>
-            <Link href="">
-              <a onClick={() => setOpenMenu(false)}>Characters</a>
-            </Link>
-          </li>
-          <li className="flex">
-            <div className="mr-2">
-              <Image
                 src="/images/icon/world.png"
                 alt="World"
                 width={28}
@@ -102,6 +89,19 @@ const Navbar = () => {
             </div>
             <Link href="/world">
               <a onClick={() => setOpenMenu(false)}>World</a>
+            </Link>
+          </li>
+          <li className="flex">
+            <div className="mr-2">
+              <Image
+                src="/images/icon/characters.png"
+                alt="Characters"
+                width={28}
+                height={28}
+              />
+            </div>
+            <Link href="/characters">
+              <a onClick={() => setOpenMenu(false)}>Characters</a>
             </Link>
           </li>
           <li className="flex">
@@ -148,8 +148,8 @@ const Navbar = () => {
               </div>
             </a>
           </Link>
-          <Link href="">
-            <a>
+          <button>
+            {/* <a> */}
               <div>
                 <Image
                   src="/images/icon/download.png"
@@ -158,8 +158,8 @@ const Navbar = () => {
                   height={28}
                 />
               </div>
-            </a>
-          </Link>
+            {/* </a> */}
+          </button>
           <button onClick={() => setOpenMenu(!openMenu)}>
             <div>
               <Image

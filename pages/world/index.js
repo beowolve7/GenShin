@@ -25,6 +25,14 @@ const World = () => {
       >
         <SwiperSlide className="w-full h-full">
           <div className={`${styles.teyvat} w-full h-full flex flex-col justify-center items-center text-white pb-20`}>
+            <div className='hidden absolute top-8 sm:block'>
+              <Image
+                src="/images/logo/logo.png"
+                alt="Logo"
+                width={194}
+                height={70}
+              />
+            </div>
             <h1 className="text-5xl font-semibold mb-6 xl:text-4xl sm:mb-2">Teyvat</h1>
             <div className="md:w-3/4 sm:w-11/12">
               <Image

@@ -1,0 +1,125 @@
+.char_mondstadt {
+  background: url('/images/background/char_mondstadt.jpeg') no-repeat center center;
+  background-size: cover;
+
+  .jean {
+    background: url('/images/characters/jean.png') no-repeat right bottom;
+    background-size: contain;
+  }
+
+  .venti {
+    background: url('/images/characters/venti.png') no-repeat right bottom;
+    background-size: contain;
+  }
+
+  .diluc {
+    background: url('/images/characters/diluc.png') no-repeat right bottom;
+    background-size: contain;
+  }
+
+  .bennett {
+    background: url('/images/characters/bennett.png') no-repeat right bottom;
+    background-size: contain;
+  }
+
+  @media only screen and (max-width: 1023px) {
+    .character {
+      background-position: center bottom;
+      background-size: cover;
+    }
+  }
+}
+
+.char_liyue {
+  background: url('/images/background/char_liyue.jpeg') no-repeat center center;
+  background-size: cover;
+
+  .ningguang {
+    background: url('/images/characters/ningguang.png') no-repeat right bottom;
+    background-size: contain;
+  }
+
+  .zhongli {
+    background: url('/images/characters/zhongli.png') no-repeat right bottom;
+    background-size: contain;
+  }
+
+  .xiao {
+    background: url('/images/characters/xiao.png') no-repeat right bottom;
+    background-size: contain;
+  }
+
+  .xingqiu {
+    background: url('/images/characters/xingqiu.png') no-repeat right bottom;
+    background-size: contain;
+  }
+
+  .xiangling {
+    background: url('/images/characters/xiangling.png') no-repeat right bottom;
+    background-size: contain;
+  }
+
+  @media only screen and (max-width: 1023px) {
+    .character {
+      background-position: center bottom;
+      background-size: cover;
+    }
+  }
+}
+
+.char_inazuma {
+  background: url('/images/background/char_inazuma.jpeg') no-repeat center center;
+  background-size: cover;
+
+  .ayaka {
+    background: url('/images/characters/ayaka.png') no-repeat right bottom;
+    background-size: contain;
+  }
+
+  .ei {
+    background: url('/images/characters/ei_half.png') no-repeat right bottom;
+    background-size: contain;
+  }
+
+  .miko {
+    background: url('/images/characters/miko_half.png') no-repeat right bottom;
+    background-size: contain;
+  }
+
+  .kokomi {
+    background: url('/images/characters/kokomi.png') no-repeat right bottom;
+    background-size: contain;
+  }
+
+  .kazuha {
+    background: url('/images/characters/kazuha.png') no-repeat right bottom;
+    background-size: contain;
+  }
+
+  .yoimiya {
+    background: url('/images/characters/yoimiya.png') no-repeat right bottom;
+    background-size: contain;
+  }
+
+  .itto {
+    background: url('/images/characters/itto.png') no-repeat right bottom;
+    background-size: contain;
+  }
+
+  @media only screen and (max-width: 1023px) {
+    .character {
+      background-position: center bottom;
+      background-size: cover;
+    }
+  }
+}
+
+.shades {
+  background: url('/images/background/shades.png') no-repeat center center;
+  background-size: cover;
+}
+
+.shadesreverse {
+  background: url('/images/background/shades_reverse.png') no-repeat center center;
+  background-size: cover;
+}
