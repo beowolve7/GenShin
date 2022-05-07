@@ -167,7 +167,7 @@ const Characters = () => {
             </div>
           </div>
         </div>
-        <div className="flex items-end w-full h-full">
+        <div className="hidden items-end w-full h-full sm:flex">
           <Swiper
             direction={"horizontal"}
             slidesPerView={1}
@@ -304,7 +304,7 @@ const Characters = () => {
             </div>
           </div>
         </div>
-        <div className="flex items-end w-full h-full">
+        <div className="hidden items-end w-full h-full sm:flex">
           <Swiper
             direction={"horizontal"}
             slidesPerView={1}
@@ -488,7 +488,7 @@ const Characters = () => {
             </div>
           </div>
         </div>
-        <div className="flex items-end w-full h-full">
+        <div className="hidden items-end w-full h-full sm:flex">
           <Swiper
             direction={"horizontal"}
             slidesPerView={1}
